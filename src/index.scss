@@ -1,0 +1,53 @@
+@import "~bootstrap/scss/bootstrap";
+@import './scss/variables';
+@import './scss/components/header';
+@import './scss/components/wizard';
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+}
+
+.title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 4.5vw;
+  position: relative;
+  z-index: 2;
+}
+
+.btn {
+  padding: 15px;
+
+  &.info {
+    background: $info-color;
+    color: white;
+  }
+  &.warning {
+    background: $warning-color;
+  }
+
+  &.choose {
+    padding: 5px;
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+.wizardArea {
+  background: #202020;
+}
+
+.form-row {
+  margin: 15px 0;
+}

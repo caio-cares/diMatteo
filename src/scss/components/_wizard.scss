@@ -1,0 +1,56 @@
+.wizard {
+  height: 100vh;
+
+  .steps {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .col {
+    padding: 0;
+    margin: 0 0 5vh 0;
+  }
+
+  .icon {
+    background: #202020;
+    color: white;
+    float: left;
+    width: 100%;
+
+    span {
+      float: right;
+      border-radius: 100%;
+      background: #202020;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      font-size: 1.5vw;
+      color: #474747;
+      margin: 0 -40px 0 0;
+    }
+    p {
+      float: left;
+      width: 95%;
+      font-size: 0.65vw;
+      text-align: right;
+      color: #474747;
+
+      strong {
+        font-weight: bold;
+        font-size: 0.8vw;
+      }
+    }
+    
+    &.active {
+      span {
+        background: $info-color;
+        color: white;
+      }
+
+      p {
+        color: white;
+      }
+    }
+  }
+}
